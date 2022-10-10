@@ -4,7 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "nav-color": "#1C1B1B",
+              "hero-color": "#f0efeb",
+              e5: "#e5e5e5",
+              d4: "#d4d4d4",
+              f0: "#f0f0f0",
+            },
+            maxWidth: {
+              heroInfo: "534px",
+              bestSeller: "650px",
+              cardTitle: "156px",
+              colorLi: "210px",
+              fascinatingTitle: "705px",
+              contactInfo: "496px",
+            },
+            backgroundImage: {
+              heroBg: "url('../images/hero-bg.png')",
+            },
+            backgroundPosition: {
+              heroBgPos: "top left calc(50% + 320px)",
+            },
+            gridTemplateColumns: {
+              col1: "repeat(1, 210px)",
+              col2: "repeat(2, 210px)",
+              col3: "repeat(3, 210px)",
+            },
+            borderRadius: {
+              btnRadius: "100px",
+            },
+          },
+        },
+      };
+    </script>
     <link rel="stylesheet" href="./custom.css" />
     <title>Thalby</title>
   </head>
@@ -20,22 +57,22 @@
               <li
                 class="text-xs md:text-base font-bold sm:text-nav-color sitenav-item"
               >
-                <a class="" href="#">Shop</a>
+                <a href="#">Shop</a>
               </li>
               <li
                 class="text-xs md:text-base font-bold sm:text-nav-color sitenav-item"
               >
-                <a class="" href="#">Collections</a>
+                <a href="#">Collections</a>
               </li>
               <li
                 class="text-xs md:text-base font-bold sm:text-nav-color sitenav-item"
               >
-                <a class="" href="#">Try a Free Guide</a>
+                <a href="#">Try a Free Guide</a>
               </li>
               <li
                 class="text-xs md:text-base font-bold sm:text-nav-color sitenav-item"
               >
-                <a class="" href="#">Stories</a>
+                <a href="#">Stories</a>
               </li>
             </ul>
           </nav>
@@ -54,7 +91,7 @@
               <a class="social-link" href="#">
                 <img
                   class="object-cover"
-                  src="../images/instagramm.svg"
+                  src="./images/instagramm.svg"
                   alt="social media image"
                   width="20"
                   height="20"

@@ -19,7 +19,7 @@
 }
 
 .sitenav-open {
-  display: block;
+  display: block !important;
 }
 
 .sitenav-list {
@@ -46,7 +46,7 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-image: url("../../../images/burger.svg");
+  background-image: url("../../images/burger.svg") !important;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -57,13 +57,13 @@
 
 @include mobile-first(576px) {
   .social-list {
-    display: flex;
+    display: flex !important;
   }
 }
 
 @include mobile-first(700px) {
   .sitenav {
-    display: block;
+    display: block !important;
     position: static;
     animation: none;
     width: auto;
