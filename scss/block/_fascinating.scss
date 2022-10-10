@@ -1,0 +1,16 @@
+.fascinating-list {
+  display: grid;
+  grid-template-columns: 288px;
+}
+
+@include mobile-first(768px) {
+  .fascinating-list {
+    grid-template-columns: 220px 220px 220px;
+  }
+}
+
+@include mobile-first(1024px) {
+  .fascinating-list {
+    grid-template-columns: 288px 288px 288px;
+  }
+}

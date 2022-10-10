@@ -1,0 +1,16 @@
+.best-seller__list {
+  display: grid;
+  grid-template-columns: 310px;
+}
+
+@include mobile-first(768px) {
+  .best-seller__list {
+    grid-template-columns: repeat(3, 230px);
+  }
+}
+
+@include mobile-first(1024px) {
+  .best-seller__list {
+    grid-template-columns: repeat(3, 310px);
+  }
+}

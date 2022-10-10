@@ -1,0 +1,28 @@
+@mixin mobile-first($min) {
+  @media only screen and (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin psevda-element($display: inline-block, $width, $height, $content) {
+  display: $display;
+  width: $width;
+  height: $height;
+  content: $content;
+}
+
+@mixin bg($bg-positon, $bg-size, $bg-repeat: no-repeat) {
+  background-position: $bg-positon;
+  background-size: $bg-size;
+  background-repeat: $bg-repeat;
+}
+
+@mixin list-unstiled {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+%link-unstiled {
+  text-decoration: none;
+}
